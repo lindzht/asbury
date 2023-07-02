@@ -8,7 +8,7 @@ import Header from './components/Header';
 import LandingPage from './components/Landing';
 import Footer from './components/Footer';
 import About from './components/About';
-import UpcomingShows from './components/UpcomingShows';
+import UpcomingShows from './components/UpcShows';
 import PastShows from './components/PastShows';
 import BookUs from './components/BookUs';
 import Sponsors from './components/Sponsors';
