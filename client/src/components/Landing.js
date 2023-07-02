@@ -1,7 +1,7 @@
 import Slideshow from "./Slideshow";
 
 
-function LandingPage () {
+function LandingPage ({isDekstop}) {
     
     const time = 3000
     const slideshow1 = [

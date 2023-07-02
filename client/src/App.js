@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
+import { useMediaQuery } from 'react-responsive'
 import Header from './components/Header';
 import LandingPage from './components/Landing';
 import Footer from './components/Footer';
@@ -17,12 +18,14 @@ import Contact from './components/Contact';
 import NavMobile from './components/NavMobile';
 
 function App() {
+  const isDesktop = useMediaQuery({query: '(min-width: 992px)'})
+
   return (
     <div className="App">
-      <Header />
+      <Header isDesktop={isDesktop}/>
       
         <Routes>
-          <Route path="/" element={<LandingPage />}></Route>
+          <Route path="/" element={<LandingPage isDesktop={isDesktop}/>}></Route>
           <Route path="about" element={<About />}></Route>
           <Route path="upcoming" element={<UpcomingShows />}></Route>
           <Route path="past" element={<PastShows />}></Route>
@@ -30,7 +33,7 @@ function App() {
           <Route path="sponsorship" element={<Sponsors />}></Route>
           <Route path="submissions" element={<Submissions />}></Route>
           <Route path="contact" element={<Contact />}></Route>
-          <Route path="menu" element={<NavMobile />}></Route>
+          {/* <Route path="menu" element={<NavMobile />}></Route> */}
         </Routes>
       
       <Footer />
