@@ -1,38 +1,167 @@
-/* .App {
-  text-align: center;
+/********************** GLOBAL STYLES ***********************/
+
+.App {
+  /* padding: 10px 10px 0 10px; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  margin: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+button {
+  background-color: rgb(0, 56, 168);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 0.9em;
+  width: 70%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#landing-container,
+#about-container {
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+
+/********************** FOOTER ***********************/
+
+footer {
+  background-color: rgb(50, 50, 50);
   color: white;
+  width: 100vw;
+  height: 110px;
 }
 
-.App-link {
-  color: #61dafb;
+#f-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 90px 0 90px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#f-content img {
+  width: 35px;
+}
+
+
+/********************** HEADER ***********************/
+
+#header-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+/********************** PAGE - STATIC BANNER IMAGE ***********************/
+
+/* .banner {
+  display: flex;
+  flex-direction: column;
+} */
+
+.banner img{
+  width: 100vw;
+  height: 300px;
+}
+
+.banner h1 {
+  margin: -48% 0 50% 0;
+}
+
+/********************** PAGE - LANDING SLIDESHOW ***********************/
+
+#l-hero-s .slideshow-container {
+  margin-top: -20px;
+}
+
+#l-hero-s .slideshow-container img{
+  width: 100%;
+  height: 360px;
+}
+
+/********************** PAGE - SLIDESHOWS ***********************/
+
+.slideshow-container img {
+  width: 100vw;
+  height: 250px;
+  margin: 40px 0 ;
+}
+
+/********************** NAV ***********************/
+
+#mob-nav-container {
+  width: 100vw;
+  height: 102vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(50, 50, 50);
+}
+
+#mob-nav-content {
+  color: white;
+  padding: 10%;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+#mob-nav-content a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.sub-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 20px 20px;
+  font-size: 0.6em;
+  font-weight: 100;
+  line-height: 30px;
+}
+
+#mob-nav-content #mob-nav-bottom {
+  position: absolute;
+  bottom: 30px;
+}
+
+#mob-nav-content #mob-nav-bottom h5 {
+  color: white;
+  font-weight: 100;
+  font-size: 0.72em;
+}
+
+
+/********************** LANDING PAGE ***********************/
+
+
+#landing-about img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+
+/********************** ABOUT PAGE ***********************/
+
+#about-container .t-block img {
+  width: 100px;
+  height: 120px;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+/* #team-container .t-right{
+  columns: 2;
+  align-items: center;
 } */
