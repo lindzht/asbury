@@ -1,4 +1,5 @@
 import Slideshow from "./Slideshow";
+import Testimonials from "./Testimonials";
 
 
 function LandingPage ({isDekstop}) {
@@ -20,7 +21,7 @@ function LandingPage ({isDekstop}) {
                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" alt="placeholder" />
             </div>
 
-            <Slideshow images={slideshow1} time={time}/>
+            <Testimonials />
 
             <button type="button" className="btn">Join Our Mailing List</button>
 

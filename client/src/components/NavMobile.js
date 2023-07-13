@@ -20,7 +20,7 @@ function MobNav ({handleMobileDisplay}) {
     return(
         <div id="mob-nav-container">
             <div id="mob-nav-content">
-                <h3 onClick={handleMobileDisplay}>{"<<<"}</h3>
+                <h3 onClick={handleMobileDisplay}>{"<"}</h3>
                 <Link to="/" onClick={handleMobileDisplay}>Home</Link>
                 <br />
                 <br />

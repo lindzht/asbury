@@ -5,12 +5,9 @@ import { useState } from "react";
 import LogoBackup from "../images/asbury_logo_h.png"
 
 
-function Header ({isDesktop} ){
+function Header ({isDesktop, displayMobNav, handleMobileDisplay} ){
 
-    const [displayMobNav, setDisplayMobNav] = useState(false);
-    const handleMobileDisplay = () => {
-        setDisplayMobNav(!displayMobNav);
-    }
+
 
     return(
         <div id="header-container">
@@ -19,7 +16,7 @@ function Header ({isDesktop} ){
             </Link>
 
             {isDesktop ? <Nav /> : <h3 onClick={handleMobileDisplay}>Menu</h3>} 
-            {displayMobNav ? <Link to="menu"><MobNav handleMobileDisplay={handleMobileDisplay}/></Link> : null}
+            {displayMobNav ? <MobNav handleMobileDisplay={handleMobileDisplay}/> : null}
         </div>
     )
 }
