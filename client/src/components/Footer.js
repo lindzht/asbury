@@ -11,7 +11,9 @@ function Footer () {
                 <img src={twitter} alt="email" />
                 <img src={facebook} alt="email" />
                 <img src={instagram} alt="email" />
+                
             </div>
+            <p>Web Design By Lindsay Taylor</p>
         </footer>
     )
 }

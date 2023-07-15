@@ -8,7 +8,7 @@ function TestimonialCard({id, name, title, quote, img, credits}) {
             <div className="tmonial-quote">
                 <h3>{quote}</h3>
                 <h4>{title}</h4>
-                <h4>{credits}</h4>
+                {/* <h4>{credits}</h4> */}
             </div>
         </article>
     )
