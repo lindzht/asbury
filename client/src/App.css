@@ -35,6 +35,15 @@ button {
   margin-bottom: 100px;
 }
 
+.sub-header {
+  text-align: center;
+  padding: 30px 0 0 0;
+  font-size: 2em;
+  font-style: italic;
+  letter-spacing: 0;
+  color: #59788e;
+}
+
 .hide {
   display: none;
 }
@@ -173,7 +182,7 @@ footer p {
 /********************** TEXT BLOCK ***********************/
 
 .t-block {
-  margin: 50px 30px;
+  margin: 90px 30px;
 }
 
 /********************** STATIC BANNER IMAGE ***********************/
@@ -323,3 +332,11 @@ footer p {
   columns: 2;
   align-items: center;
 } */
+
+
+
+/********************** BOOK US ***********************/
+
+#book-container {
+  margin-bottom: 150px;
+}
