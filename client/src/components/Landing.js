@@ -1,5 +1,6 @@
 import Slideshow from "./Slideshow";
 import Testimonials from "./Testimonials";
+import LandingSlideMob from "./LandingSlideMob";
 
 
 function LandingPage ({isDekstop}) {
@@ -13,7 +14,9 @@ function LandingPage ({isDekstop}) {
 
     return(
         <div id="landing-container">
-            <div id="l-hero-s"> <Slideshow images={slideshow1} time={time}/></div>
+            <div id="l-hero-s"> 
+                <LandingSlideMob images={slideshow1} time={time}/>
+            </div>
             
             <div id="landing-about">
                 <h2>Asbury Shorts USA</h2>
