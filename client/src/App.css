@@ -196,14 +196,35 @@ footer p {
 
 /********************** LANDING SLIDESHOW ***********************/
 
+#l-hero-s {
+  margin-bottom: 0px;
+}
+
 #l-hero-s .slideshow-container {
-  margin-top: -40px;
+  margin: -40px 0 -70px 0;
 }
 
 #l-hero-s .slideshow-container img{
   width: 100%;
   height: 360px;
 }
+
+#l-hero-s .slideshow-container #slide-icons {
+  position: relative;
+  top: -130px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 10;
+  width: 100%;
+}
+
+#l-hero-s .slideshow-container #img-icon {
+  height: 12px;
+  width: 12px;
+  padding: 5px;
+}
+
 
 /********************** SLIDESHOWS ***********************/
 

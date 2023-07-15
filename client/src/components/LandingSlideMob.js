@@ -1,23 +1,17 @@
 import { useState } from "react";
+import Icon from "../images/circle_w.png";
 
 function LandingSlideMob ({images, time} ) {
 
     const [nextIndex, setNextIndex] = useState (0);
-    const arrayLength = images.length;
-
     const [touchPosition, setTouchPosition] = useState(null)
+    const [imgIcon, setImageIcon] = useState(false);
+    
+    const arrayLength = images.length;
     const handleTouchStart = (e) => {
         const touchDown = e.touches[0].clientX
         setTouchPosition(touchDown)
     }
-
-    // setTimeout(() => {
-    //     if (nextIndex < arrayLength - 1) {
-    //         setNextIndex(nextIndex + 1);
-    //     } else {
-    //         setNextIndex(0);
-    //     }
-    //   }, time);
 
     const handleTouchMove = (e) => {
         const touchDown = touchPosition
@@ -43,6 +37,10 @@ function LandingSlideMob ({images, time} ) {
         setTouchPosition(null)
     }
 
+    const icons = images.map((i) => {
+        return(<img id="img-icon" src={Icon} alt="icon" />)
+    })
+
 
 
 
@@ -50,7 +48,8 @@ function LandingSlideMob ({images, time} ) {
         <div className="slideshow-container" 
             onTouchStart={handleTouchStart}
             onTouchMove={handleTouchMove}> 
-                <img src={images[nextIndex]} alt="Upcoming Show" ></img>   
+                <img src={images[nextIndex]} alt="Upcoming Show" ></img> 
+                {arrayLength && arrayLength > 0 ? <div id="slide-icons">{icons}</div> : null}
         </div>
     )
 }
