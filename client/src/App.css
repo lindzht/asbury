@@ -22,6 +22,11 @@ button {
   padding: 15px;
   font-size: 0.9em;
   width: 70%;
+  cursor: grab;
+}
+
+button:hover {
+  background-color: #2b4254;
 }
 
 #landing-container,
@@ -37,7 +42,7 @@ button {
 
 .sub-header {
   text-align: center;
-  padding: 30px 0 0 0;
+  padding: 30px 20px 0 20px;
   font-size: 2em;
   font-style: italic;
   letter-spacing: 0;
@@ -346,5 +351,63 @@ footer p {
 /********************** BOOK US ***********************/
 
 #book-container {
-  margin-bottom: 150px;
+  margin-bottom: 130px;
+}
+
+/********************** SPONSORSHIP ***********************/
+
+#sponsor-container {
+  margin-bottom: 130px;
+}
+
+
+
+/********************** SUBMISSIONS ***********************/
+
+#sub-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+#sub-container .t-block {
+  margin: 30px 30px;
+} 
+
+#sub-container button {
+  margin: 50px 0 0 0;
+}
+
+/********************** CONTACT ***********************/
+
+#contact-container {
+  margin-bottom: 130px;
+}
+
+#contact-container .t-block {
+  margin: 70px 30px;
+}
+
+#contact-container #follow-container {
+  columns: 2;
+  margin: -40px 35px;
+}
+
+#contact-container #follow-container img {
+  height: 130px;
+  width: 150px;
+  opacity: 50%;
+}
+
+#contact-container #follow-container img:hover {
+  opacity: 100%;
+}
+
+#contact-container #follow-container h3 {
+  margin: -70px 0 70px 0;
+  /* color: white; */
+  font-weight: 900;
+  font-size: 1.3em;
 }
