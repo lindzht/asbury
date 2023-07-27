@@ -425,6 +425,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 130px;
 }
 
 
@@ -439,7 +440,7 @@ footer p {
   width: 330px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px 10px 0 0; 
-  margin: 50px 0 130px 0;
+  margin-top: 50px;
 }
 
 .up-show-c-header {
@@ -508,3 +509,59 @@ footer p {
   font-size: 1.5em;
 }
 
+/********************** PAST SHOWS PAGE ***********************/
+
+#past-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 130px;
+}
+
+
+
+/********************** PAST SHOWS CARD ***********************/
+
+.past-show-card-container {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 200px;
+  margin-top: 50px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+
+.past-show-c-header {
+  width: 150px;
+}
+
+.past-show-c-header img {
+  width: 150px;
+  height: 200px;
+  opacity: 40%;
+  z-index: -10;
+}
+
+#past-s-c-title {
+  margin: -160px 0 0 5px;
+  z-index: 10;
+}
+
+#past-s-c-title h2 {
+  font-size: 1.2em;
+}
+
+#past-s-c-title h1 {
+  font-size: 1.5em;
+}
+
+.past-show-c-desc {
+  margin-left: 10px;
+}
+
+.past-show-c-desc h3 {
+  font-size: 1em;
+  margin: 0;
+}
