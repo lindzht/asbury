@@ -1,9 +1,10 @@
 import Slideshow from "./Slideshow";
 import Testimonials from "./Testimonials";
 import LandingSlideMob from "./LandingSlideMob";
+import LandingCard from "./LandingCard";
 
 
-function LandingPage ({isDekstop}) {
+function LandingPage ({isDesktop}) {
     
     const time = 3000
     const slideshow1 = [
@@ -14,9 +15,13 @@ function LandingPage ({isDekstop}) {
 
     return(
         <div id="landing-container">
+            {isDesktop ? 
+            <div id="l-hero-s"> 
+                <LandingCard img="https://www.syfy.com/sites/syfy/files/styles/amp_featured_image/public/2019/10/faceoff_cage.jpg?h=ba463b8a" />
+            </div> :  
             <div id="l-hero-s"> 
                 <LandingSlideMob images={slideshow1} time={time}/>
-            </div>
+            </div>}
             
             <div id="landing-about">
                 <h2>Asbury Shorts USA</h2>
