@@ -439,7 +439,7 @@ footer p {
   width: 330px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   border-radius: 10px 10px 0 0; 
-  margin-bottom: 130px;
+  margin: 50px 0 130px 0;
 }
 
 .up-show-c-header {
@@ -447,21 +447,50 @@ footer p {
   justify-content: center;
   align-items: center;
   width: 330px;
+  height: 350px;
 }
 
-.up-show-c-header h1{
-  margin-left: -300px;
-}
-
-.up-show-card-container img {
+.up-show-c-header img{
+  opacity: 50%;
+  background-color: black;
+  z-index: -10;
   width: 330px;
   height: 350px;
   border-radius: 10px 10px 0 0; 
 }
 
+#up-s-c-title {
+  display: flex;
+  flex-direction: column;
+  margin-left: -320px;
+}
+#up-s-c-title h1 {
+  font-size: 2.7em;
+  margin-bottom: 10px;
+}
+
+#up-s-c-title h2{
+  font-size: 2.3em;
+  font-weight: 500;
+  margin: 0;
+  background-color: #ffffff;
+  width: 28%;
+  padding: 10px;
+}
+
 .up-show-c-desc {
-  line-height: 3px;
   margin-right: 30px;
+}
+
+.up-show-c-desc h3 {
+  font-size: 1.3em;
+  font-weight: 500;
+  margin-bottom: -15px;
+}
+
+.up-show-c-desc h4 {
+  font-size: 1.2em;
+  margin-bottom: -15px;
 }
 
 .up-show-c-desc p {
@@ -474,7 +503,8 @@ footer p {
   text-align: center;
 }
 
-.up-show-card-container .button a {
+.up-show-card-container a {
   text-decoration: none!important;
+  font-size: 1.5em;
 }
 
