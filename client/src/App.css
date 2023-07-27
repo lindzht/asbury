@@ -272,7 +272,7 @@ footer p {
 
 #testimonials-container {
   margin: 70px;
-  padding: 30px;
+  /* padding: 30px; */
   background-color: #59788e2f;
   width: 100%;
   display: flex;
