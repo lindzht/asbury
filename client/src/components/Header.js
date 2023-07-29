@@ -19,7 +19,7 @@ function Header ({isDesktop, displayMobNav, handleMobileDisplay} ){
 
     return(
         <div id={scrollingHeader ? "header-container-mobscroll": "header-container"}>
-            {scrollingHeader ? <h4>Asbury Shorts USA</h4> : 
+            {scrollingHeader ? <Link to="/"><h4>Asbury Shorts USA</h4></Link> : 
                 <Link to="/"><img id="logo-img" src={LogoBackup} alt="Logo" /></Link>}
 
             {isDesktop ? <Nav /> : (scrollingHeader ? <img src={Hamburger} id="hamburger" alt="menu" onClick={handleMobileDisplay} /> : <h3 onClick={handleMobileDisplay}>Menu</h3>)} 

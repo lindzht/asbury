@@ -621,6 +621,24 @@ footer p {
     margin-top: 10px;
   }
 
+
+  #header-container-mobscroll {
+    display: flex;
+    flex-direction: row;
+    height: 38px;
+    align-items: center;
+    animation: fadeIn 0.4s; 
+  }
+
+  #header-container-mobscroll a {
+    color: white;
+  }
+
+  #header-container-mobscroll h4{
+    font-weight: 300;
+  }
+
+
   /********************** Landing CARD ***********************/
 
   .landcard-container {
@@ -704,12 +722,33 @@ footer p {
     line-height: 22px;
   }
 
-  #landing-about #land-img-row {
-    width: 80vw;
+  #landing-about #land-img-row{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90vw;
+    margin-top: 5em;
+    /* width: 80vw;
     margin: 5em 0 0 0;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-around; */
   }
+
+  #landing-about #land-img-row div{
+    width: 20em;
+    height: 13em;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* #landing-about #land-img-row div:hover{
+    opacity: 50%;
+    background-image: none!important;
+  } */
+
+  
 
 
   

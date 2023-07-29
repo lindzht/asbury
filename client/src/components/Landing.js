@@ -2,6 +2,9 @@ import Slideshow from "./Slideshow";
 import Testimonials from "./Testimonials";
 import LandingSlideMob from "./LandingSlideMob";
 import LandingCard from "./LandingCard";
+import dadmom from "../images/DadinMum.1.jpg";
+import pickle from "../images/pickle.jpg";
+import powers from "../images/SuperPowers.jpg";
 
 
 function LandingPage ({isDesktop}) {
@@ -52,9 +55,9 @@ function LandingPage ({isDesktop}) {
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 {isDesktop? 
                 <div id="land-img-row">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" alt="placeholder" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" alt="placeholder" />
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" alt="placeholder" />
+                    <div style={{backgroundImage: `url(${dadmom})`}}></div>
+                    <div style={{backgroundImage: `url(${pickle})`}}></div>
+                    <div style={{backgroundImage: `url(${powers})`}}></div>
                 </div>   
                 : <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" alt="placeholder" />}
             </div>
