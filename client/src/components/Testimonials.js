@@ -3,6 +3,7 @@ import Fade from 'react-reveal/Fade';
 import { useMediaQuery } from "react-responsive";
 
 
+
 function Testimonials() {
     const isDesktop = useMediaQuery({query: '(min-width: 992px)'})
 
@@ -21,7 +22,7 @@ function Testimonials() {
             <Fade bottom>
                 <TestimonialCard
                     isDesktop={isDesktop}
-                    id="r-card"
+                    id={isDesktop? null: "r-card"}
                     name={"Jason Reitman"} 
                     title={"Academy Award nominated Director, Asbury Shorts Concert Guest Host"} 
                     credits={`"JUNO", "Young Adult", "Up in the Air", "Thank You for Smoking"`}
