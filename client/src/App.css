@@ -54,6 +54,11 @@ button:hover, .button:hover {
   color: #59788e;
 }
 
+a {
+  text-decoration: none !important;
+}
+
+
 .hide {
   display: none;
 }
@@ -579,12 +584,13 @@ footer p {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding: 5px;
+    height: 70px;
   }
 
   #logo-img {
-    height: 5em;
-    padding: 4px 10px;
+    height: 4em;
+    padding: 4px 40px;
 
   }
 
@@ -604,7 +610,7 @@ footer p {
   }
 
   #nav-container h1 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   #nav-container #nav-show-sub,
@@ -615,8 +621,98 @@ footer p {
     margin-top: 10px;
   }
 
+  /********************** Landing CARD ***********************/
+
+  .landcard-container {
+    margin-right: 10px;
+  }
+
+  .landcard-content {
+    background-size:cover;
+    background-position: center;
+    height: 35em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /* background-repeat: repeat; */
+  }
+
+  #landcard-title {
+    text-align: left;
+    color: white;
+    margin: 0 0 10px 10px;
+  }
+
+  #landcard-title:hover {
+    color: yellow;
+  }
+
+  #landcard-title h1{
+    text-decoration: none!important;
+    font-size: 2em;
+    margin: 15px 0;
+    letter-spacing: 1px;
+  }
+
+  #landcard-title h2, 
+  #landcard-title h3 {
+    margin: 0;
+  }
+
+  #landcard-title h2 {
+    background-color: white;
+    color: black;
+    width: 26%;
+    padding: 5px 0 5px 10px;
+    margin-left: -10px;
+  }
+
+  #landcard-title h3 {
+    font-style: italic;
+    font-size: 1em;
+  }
+
+  /********************** Landing ***********************/
+
+  #l-hero-s {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    /* justify-content: center; */
+  }
+
+  #landing-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    padding: 3em;
+    height: 100%;
+  }
+
+  #landing-about h2 {
+    font-size: 1.7em;
+    color: #59788e;
+  }
+
+  #landing-about p {
+    margin: 2em 15em 0 15em; 
+    font-size: 0.9em;
+    line-height: 22px;
+  }
+
+  #landing-about #land-img-row {
+    width: 80vw;
+    margin: 5em 0 0 0;
+    display: flex;
+    justify-content: space-around;
+  }
 
 
+  
 
 
 
