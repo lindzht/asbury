@@ -49,7 +49,7 @@ function App() {
           </Routes>
         </div>
       
-      <Footer />
+      <Footer isDesktop={isDesktop}/>
     </div>
   );
 }

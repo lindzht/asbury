@@ -2,6 +2,7 @@
 
 .App {
   /* padding: 10px 10px 0 10px; */
+  /* width: 100vw!important; */
 }
 
 body {
@@ -723,7 +724,7 @@ footer p {
     align-items: center;
     margin-top: 10px;
     padding: 3em 3em 2em 3em;
-    width: 100vw;
+    width: 90vw;
     background-color: white;
   }
 
@@ -771,23 +772,27 @@ footer p {
   } */
 
   #testimonials-container {
-    padding: 10em 0 10em 0;
+    padding: 4em 0;
     /* background-color: #ffffff;   */
     /* background-image: url('images/theater_light.jpg'); */
     background-position: bottom;
     flex-direction: row;
     background-color: #f2f4f5;
+    width: 100vw;
+    overflow-x: scroll;
+    justify-content: left;
   }
 
   .tmonial-block {
-    width: 23em;
+    width: 20em;
     background-color: rgb(255, 255, 255);
-    margin: 20px 5em;
-    padding: 5em;
+    margin: 20px 4em;
+    padding: 2em 4em 1em 4em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-shadow: 10px 5px 5px #425d7130;
+    border-radius: 40% 40% 0 0;
   }
 
   .tmonial-header{
@@ -797,10 +802,11 @@ footer p {
   #tmonial-img {
     background-size: cover;
     background-position: center;
-    width: 28em;
-    height: 28em;
+    width: 23em;
+    height: 23em;
     border-radius: 50%;
-    margin: -20px 0 -40px 0;
+    margin: -25px 0 -40px 0;
+    border: 1em solid #425d71;
   }
 
 
@@ -810,8 +816,8 @@ footer p {
   }
 
   .tmonial-quote h1{
-    margin: -250px 0 -20px 0;
-    font-size: 2em;
+    margin: -220px 0 -15px 0;
+    font-size: 1.8em;
     opacity: 0;
     padding: 7em 1em;
     border-radius: 50%;
@@ -822,6 +828,13 @@ footer p {
     opacity: 100%;
     cursor: grab;
     z-index: 100;
+  }
+
+  .tmonial-quote h3{
+    font-size: 2.5em;
+    letter-spacing: -0.5px;
+    margin: 20px 0 0 -21px;
+    width: 10em;
   }
 
   .tmonial-block:hover #tmonial-img{
@@ -859,7 +872,8 @@ footer p {
   } */
 
   #landing-container .btn {
-    width: 300px;
+    width: 250px;
+    margin: 5em 0;
   }
   
   /********************** Footer ***********************/
@@ -868,6 +882,55 @@ footer p {
     z-index: 500;
     position: relative;
   }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    width: 100vw;
+  }
+
+  #f-l-content {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em;
+    /* column-count: 2; */
+    width: 200px;
+  }
+
+  #f-l-content a {
+    color: white;
+    line-height: 25px;
+    font-size: 0.8em;
+    font-family: Calibri, sans-serif;
+    font-weight: 300;
+  }
+
+  #f-l-content a:hover {
+    color: yellow;
+  }
+
+  #f-content{
+    width: 400px;
+    text-align: right;
+  }
+
+  #f-content p {
+    margin-right: 20px;
+    font-size: 0.7em;
+  }
+
+  #f-content img {
+    padding: 1em;
+  }
+
+  #f-content img:hover {
+    opacity: 70%;
+    cursor: grab;
+  }
+
+
 
   
 
