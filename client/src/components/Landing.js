@@ -21,22 +21,21 @@ function LandingPage ({isDesktop}) {
             {isDesktop ? 
             <div id="l-hero-s"> 
                 <LandingCard 
-                    img="https://www.syfy.com/sites/syfy/files/styles/amp_featured_image/public/2019/10/faceoff_cage.jpg?h=ba463b8a" 
+                    img={dadmom} 
                     title="CUNY Graduate Theater"
                     date="Aug 18"
                     location="365 Fifth Ave"
                     host="Ken Dashow"    
                     />
                 <LandingCard 
-                    img="https://www.syfy.com/sites/syfy/files/styles/amp_featured_image/public/2019/10/faceoff_cage.jpg?h=ba463b8a" 
+                    img={powers} 
                     title="CUNY Graduate Theater"
                     date="Aug 18"
                     location="365 Fifth Ave"
                     host="Ken Dashow"    
                     />
                 <LandingCard 
-                    img="https://www.syfy.com/sites/syfy/files/styles/amp_featured_image/public/2019/10/faceoff_cage.jpg?h=ba463b8a" 
-                    title="CUNY Graduate Theater"
+                    img={pickle}
                     date="Aug 18"
                     location="365 Fifth Ave"
                     host="Ken Dashow"    

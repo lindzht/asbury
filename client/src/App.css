@@ -656,7 +656,7 @@ footer p {
 
   .landcard-content {
     background-size:cover;
-    background-position: center;
+    background-position: left;
     height: 35em;
     width: 33em;
     display: flex;
@@ -730,7 +730,7 @@ footer p {
   #landing-about h2 {
     font-size: 25em;
     width: 100%;
-    color: #59788e1a;
+    color: #59788e1d;
     z-index: 0;
     top: -290px;
     position: fixed;
@@ -776,7 +776,7 @@ footer p {
     /* background-image: url('images/theater_light.jpg'); */
     background-position: bottom;
     flex-direction: row;
-    background-color: rgb(250, 250, 250);
+    background-color: #f2f4f5;
   }
 
   .tmonial-block {
@@ -794,9 +794,12 @@ footer p {
     margin: 0px;
   }
 
-  .tmonial-header img {
+  #tmonial-img {
+    background-size: cover;
+    background-position: center;
     width: 28em;
     height: 28em;
+    border-radius: 50%;
     margin: -20px 0 -40px 0;
   }
 
@@ -807,10 +810,10 @@ footer p {
   }
 
   .tmonial-quote h1{
-    margin: -240px 0 20px 0;
-    font-size: 1.8em;
+    margin: -250px 0 -20px 0;
+    font-size: 2em;
     opacity: 0;
-    padding: 7em 2em;
+    padding: 7em 1em;
     border-radius: 50%;
     /* background-color: yellow; */
   }
@@ -818,10 +821,11 @@ footer p {
   .tmonial-block:hover h1{
     opacity: 100%;
     cursor: grab;
+    z-index: 100;
   }
 
-  .tmonial-block:hover img{
-    opacity: 50%;
+  .tmonial-block:hover #tmonial-img{
+    opacity: 19%;
     cursor: grab;
   }
 

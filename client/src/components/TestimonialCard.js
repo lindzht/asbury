@@ -7,7 +7,7 @@ function TestimonialCard({isDesktop, id, name, title, quote, img, credits}) {
         
         <article className="tmonial-block" id={id? "r-card" : null}>
             <div className="tmonial-header">
-                {img ? <img src={img} alt="test"/> : null}
+                {img ? <div id="tmonial-img" style={{backgroundImage: `url(${img})`}}></div> : null}
                 {isDesktop ? null : <h1>{name}</h1>}
             </div>
             <div className="tmonial-quote">
