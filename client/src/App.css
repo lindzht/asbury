@@ -74,6 +74,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  z-index: 100;
 }
 
 footer p {
@@ -83,6 +84,7 @@ footer p {
 
 #f-content {
   padding: 10px;
+  z-index: 100;
 }
 
 #f-content img {
@@ -223,6 +225,7 @@ footer p {
 
 #l-hero-s {
   margin-bottom: 0px;
+  z-index: 20;
 }
 
 #l-hero-s .slideshow-container {
@@ -284,6 +287,7 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 20;
 }
 
 .tmonial-block{
@@ -579,6 +583,7 @@ footer p {
 
   /********************** HEADER ***********************/
 
+ 
   #header-container {
     display: flex;
     flex-direction: row;
@@ -586,6 +591,9 @@ footer p {
     justify-content: space-between;
     padding: 5px;
     height: 70px;
+    z-index: 700;
+    background-color: white;
+    position: relative;
   }
 
   #logo-img {
@@ -628,6 +636,7 @@ footer p {
     height: 38px;
     align-items: center;
     animation: fadeIn 0.4s; 
+    z-index: 600;
   }
 
   #header-container-mobscroll a {
@@ -659,7 +668,7 @@ footer p {
   #landcard-title {
     text-align: left;
     color: white;
-    margin: 0 0 10px 10px;
+    margin: 0 0 20px 10px;
   }
 
   #landcard-title:hover {
@@ -702,6 +711,8 @@ footer p {
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
+    background-color: white;
+    padding-bottom: 1em;
     /* justify-content: center; */
   }
 
@@ -712,19 +723,29 @@ footer p {
     align-items: center;
     margin-top: 10px;
     padding: 3em 3em 2em 3em;
-    width: 70%;
+    width: 100vw;
     background-color: white;
   }
 
   #landing-about h2 {
-    font-size: 1.7em;
-    color: #59788e;
+    font-size: 25em;
+    width: 100%;
+    color: #59788e1a;
+    z-index: 0;
+    top: -290px;
+    position: fixed;
+    z-index: 10;
+    font-weight: 900;
+    line-height: 0.8em;
+    text-align: justify;
+    /* letter-spacing: 50px; */
   }
 
   #landing-about p {
-    margin: 2em 10em 0 10em; 
+    margin: 2em 15em 0 15em; 
     font-size: 0.9em;
     line-height: 22px;
+    z-index: 10;
   }
 
   #landing-about #land-img-row{
@@ -734,11 +755,12 @@ footer p {
     align-items: center;
     width: 80vw;
     margin-top: 5em;
+    z-index: 10;
   }
 
   #landing-about #land-img-row div{
-    width: 20em;
-    height: 13em;
+    width: 50em;
+    height: 12.5em;
     background-size: cover;
     background-position: center;
   }
@@ -749,23 +771,69 @@ footer p {
   } */
 
   #testimonials-container {
-    padding: 50px 0 50px 0;
-    background-color: #ffffff;  
-    background-image: url('images/theater_light.jpg');
+    padding: 10em 0 10em 0;
+    /* background-color: #ffffff;   */
+    /* background-image: url('images/theater_light.jpg'); */
     background-position: bottom;
+    flex-direction: row;
+    background-color: rgb(250, 250, 250);
   }
 
   .tmonial-block {
-    width: 60em;
+    width: 23em;
     background-color: rgb(255, 255, 255);
-    margin: 20px 0;
+    margin: 20px 5em;
     padding: 5em;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px #425d7130;
   }
 
-  .tmonial-block .tmonial-header img{
-    width: 25em;
-    height: 25em;
+  .tmonial-header{
+    margin: 0px;
+  }
+
+  .tmonial-header img {
+    width: 28em;
+    height: 28em;
+    margin: -20px 0 -40px 0;
+  }
+
+
+  .tmonial-quote {
+    margin: 0px;
+    width: 100%;
+  }
+
+  .tmonial-quote h1{
+    margin: -240px 0 20px 0;
+    font-size: 1.8em;
+    opacity: 0;
+    padding: 7em 2em;
+    border-radius: 50%;
+    /* background-color: yellow; */
+  }
+
+  .tmonial-block:hover h1{
+    opacity: 100%;
+    cursor: grab;
+  }
+
+  .tmonial-block:hover img{
+    opacity: 50%;
+    cursor: grab;
+  }
+
+  #testimonials-container > div:nth-child(2) > article{
+    animation: fadeIn 3s; 
+  }
+
+
+
+  /* .tmonial-block .tmonial-header img{
+    width: 15em;
+    height: 15em;
     box-shadow: 10px 5px 5px #425d7130;
   }
 
@@ -775,7 +843,7 @@ footer p {
   }
   
   .tmonial-quote h3{
-    font-size: 3.9em;
+    font-size: 2em;
     line-height: 50px;
     font-style: italic;
     margin: 20px 0;
@@ -784,19 +852,23 @@ footer p {
   .tmonial-quote h4 {
     font-size: 1.2em;
     margin: 0;
-  }
+  } */
 
   #landing-container .btn {
     width: 300px;
   }
   
+  /********************** Footer ***********************/
 
-  @keyframes animateBg {
-    0% { background-position: 100% 0%; }
-    100% { background-position: 0% 0%; }
+  #root > div > footer {
+    z-index: 500;
+    position: relative;
   }
+
   
 
+
+  
 
   
 
