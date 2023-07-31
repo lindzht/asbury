@@ -210,12 +210,19 @@ footer p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 300px;
+  width: 100vw;
 }
 
-.banner img{
+.b-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* .banner img{
   width: 100vw;
   height: 300px;
-}
+} */
 
 .banner h1 {
   position: absolute;
@@ -342,13 +349,19 @@ footer p {
 
 /********************** ABOUT PAGE ***********************/
 
+#about-container .t-block .t-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-
-#about-container .t-block img {
-  width: 100px;
-  height: 120px;
+#about-container .t-block .t-left #t-img {
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  padding: 5px;
+  background-position: center;
+  background-size: contain;
 }
 
 #about-container #about-content .t-block {
@@ -784,10 +797,10 @@ footer p {
   }
 
   .tmonial-block {
-    width: 20em;
+    width: 19em;
     background-color: rgb(255, 255, 255);
     margin: 20px 4em;
-    padding: 2em 4em 1em 4em;
+    padding: 2em 4em 4em 4em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -802,8 +815,8 @@ footer p {
   #tmonial-img {
     background-size: cover;
     background-position: center;
-    width: 23em;
-    height: 23em;
+    width: 22em;
+    height: 22em;
     border-radius: 50%;
     margin: -25px 0 -40px 0;
     border: 1em solid #425d71;
@@ -875,7 +888,57 @@ footer p {
     width: 250px;
     margin: 5em 0;
   }
+
+  /********************** STATIC BANNER IMAGE ***********************/
+
+  .banner {
+    height: 400px;
+  }
+
+  .b-img {
+    opacity: 30%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .banner h1 {
+    position: absolute;
+    top: 220px;
+    font-size: 3em;
+    letter-spacing: 10px;
+  }
+
+
+  /********************** Text Blocks ***********************/
+
+  .t-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .t-block .t-left {
+    width: 30%;
+  }
+
+  .t-block .t-left img {
+    margin-top: -50px;
+  }
+
+  .t-block .t-right {
+    width: 60%;
+    text-align: left;
+  }
   
+
+  /********************** About ***********************/
+
+  #about-content {
+    width: 70vw;
+  }
+
+
   /********************** Footer ***********************/
 
   #root > div > footer {

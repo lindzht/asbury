@@ -2,8 +2,8 @@
 
 function Banner ({img, title}) {
     return(
-        <div className="banner">
-            <img src={img} alt="placeholder" />
+        <div className="banner" >
+            <div className="b-img" style={{backgroundImage: `url(${img})`}}></div>
             <h1>{title}</h1>
         </div>
     )
