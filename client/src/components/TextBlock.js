@@ -1,4 +1,7 @@
 function TextBlock({title, content, img}) {
+    
+
+
     return(
         <article className="t-block">
             <div className="t-left">
