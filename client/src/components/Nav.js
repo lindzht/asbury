@@ -9,9 +9,11 @@ function Nav () {
     
     const handleDisplayShow = () => {
         setDisplayShowSub(!displayShowSub);
+        setDisplayOppSub(false);
     }
     const handleDisplayOpp = () => {
         setDisplayOppSub(!displayOppSub);
+        setDisplayShowSub(false);
     }
 
 
@@ -25,8 +27,8 @@ function Nav () {
                 <h1 onClick={handleDisplayShow}>Shows</h1>
                     {displayShowSub ? 
                     <div id="nav-show-sub">
-                        <Link to="upcoming" >Upcoming Shows</Link>
-                        <Link to="past">Past Shows</Link>  
+                        <Link to="upcoming" onClick={handleDisplayShow} >Upcoming Shows</Link>
+                        <Link to="past" onClick={handleDisplayShow} >Past Shows</Link>  
                     </div> : null}
             </div>
             
@@ -35,9 +37,9 @@ function Nav () {
                 <h1 onClick={handleDisplayOpp}>Opportunities</h1>
                     {displayOppSub ? 
                     <div id="nav-op-sub">
-                        <Link to="booking" >Book Us</Link>
-                        <Link to="sponsorship" >Sponsorship</Link>
-                        <Link to="submissions" >Submissions</Link>
+                        <Link to="booking" onClick={handleDisplayOpp} >Book Us</Link>
+                        <Link to="sponsorship" onClick={handleDisplayOpp} >Sponsorship</Link>
+                        <Link to="submissions" onClick={handleDisplayOpp} >Submissions</Link>
                     </div> : null}   
             </div>
             

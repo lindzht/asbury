@@ -20,6 +20,11 @@ h4 {
   font-weight: 100;
 }
 
+p {
+  font-family: Calibri, sans-serif;
+  font-weight: 100;
+}
+
 button, .button {
   background-color: #59788e;
   color: white;
@@ -623,24 +628,39 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 500px;
+    width: 600px;
     height: 100px;
   }
 
   #nav-container a {
-    text-decoration: none;    
+    text-decoration: none;   
+    color: black; 
+  }
+
+  #nav-container a:hover,
+  #nav-container h1:hover {
+    color: blue;
   }
 
   #nav-container h1 {
-    font-size: 0.8em;
+    font-size: 0.9em;
+  }
+
+  #nav-container h1:hover {
+    cursor: grab;
   }
 
   #nav-container #nav-show-sub,
   #nav-container #nav-op-sub{
     display: flex;
     flex-direction: column;
-    font-size: 0.5em;
-    margin-top: 10px;
+    font-size: 0.78em;
+    position: fixed;
+    line-height: 27px;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    font-family: Calibri, sans-serif;  
   }
 
 
@@ -931,16 +951,33 @@ footer p {
     text-align: left;
   }
 
-  #team-container > article > div.t-right > ul {
-    margin-left: -40px;
-  }
-
   /********************** About ***********************/
 
   #about-content {
-    width: 70vw;
+    width: 65vw;
   }
 
+  #about-content p {
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+
+  #about-container .t-block .t-right {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about-container .t-block .t-right #t-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+  }
+
+  #team-container > article > div.t-right > p > ul {
+    margin-left: -40px;
+  }
 
   /********************** Footer ***********************/
 
