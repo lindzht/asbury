@@ -953,6 +953,10 @@ footer p {
 
   /********************** About ***********************/
 
+  #about-container {
+    margin-bottom: 40px;
+  }
+
   #about-content {
     width: 65vw;
   }
@@ -978,6 +982,131 @@ footer p {
   #team-container > article > div.t-right > p > ul {
     margin-left: -40px;
   }
+
+  /********************** Upcoming Shows ***********************/
+
+  #upcoming-container {
+    margin: 50px 0;
+  }
+
+  /********************** Upcoming Shows CARD ***********************/
+
+  .up-show-card-container {
+    display: flex;
+    flex-direction: row;
+    width: 56em;
+    height: 23em;
+    margin-bottom: 70px;
+  }
+
+  .up-show-card-container .up-show-c-header {
+    margin-left: 319px;
+    height: 23em;
+  }
+
+  .up-show-card-container .up-show-c-header #up-s-c-title h1 {
+    margin: -10px 0 10px 10px;
+  }
+
+  .up-show-card-container .up-show-c-header #up-s-c-title h2{
+    font-size: 1.5em;
+    margin-bottom: 185px;
+  }
+
+
+  .up-show-card-container .up-show-c-header #up-img{
+    width: 30em;
+    height: 23em;
+    margin-left: -475px;
+    z-index: -1;
+    background-position: center;
+    background-size: contain;
+    opacity: 68%;
+  }
+
+  /* .up-show-card-container .up-show-c-desc {
+    margin-top: 0px;
+  } */
+
+  .up-show-card-container .up-show-c-desc h3{
+    letter-spacing: 0px;
+    font-weight: 100;
+    font-size: 1.2em;
+  }
+  .up-show-card-container .up-show-c-desc h4 {
+    font-size: 1em;
+  }
+
+  .up-show-card-container .up-show-c-desc p {
+    margin-top: 100px;
+    font-size: 0.9em;
+  }
+
+  .up-show-card-container .up-show-c-desc #tix {
+    position: relative;
+    left: 350px;
+    top: 25px;
+    color: blue;
+    font-family: Calibri, sans-serif;
+    font-weight: 100;
+    /* font-size: 1.6em; */
+  }
+
+  .up-show-card-container .up-show-c-desc #tix:hover{
+    left: 355px;
+    font-weight: 500;
+  }
+
+
+
+
+  /* .up-show-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60em;
+  }
+
+  .up-show-c-header {
+    width: 27em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -180px;
+  }
+
+  .up-show-c-header #up-img {
+    height: 350px;
+    width: 100%;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+    margin-left: -535px;
+  }
+
+  .up-show-c-header #up-s-c-title{
+    margin-left: 0px;
+  }
+
+  .up-show-card-container .up-show-c-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    height: 350px;
+    width: 40%;
+  }
+
+  .up-show-card-container .up-show-c-desc a{
+    position: relative;
+    left: 400px;
+    top: 10px;
+  }
+
+  .up-show-card-container .up-show-c-desc p {
+    margin-top: 100px;
+  } */
+
 
   /********************** Footer ***********************/
 

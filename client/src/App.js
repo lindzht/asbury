@@ -38,7 +38,7 @@ function App() {
           <Routes>
               <Route path="/" element={<LandingPage isDesktop={isDesktop}/>}></Route>
               <Route path="about" element={<About />}></Route>
-              <Route path="upcoming" element={<UpcomingShows />}></Route>
+              <Route path="upcoming" element={<UpcomingShows isDesktop={isDesktop}/>}></Route>
               <Route path="past" element={<PastShows />}></Route>
               <Route path="booking" element={<BookUs />}></Route>
               <Route path="sponsorship" element={<Sponsors />}></Route>
