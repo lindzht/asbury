@@ -16,10 +16,15 @@ function Nav () {
         setDisplayShowSub(false);
     }
 
+    const closeAllSub = () => {
+        setDisplayShowSub(false);
+        setDisplayOppSub(false);
+    };
+
 
     return(
         <div id="nav-container">
-            <Link to="/about">
+            <Link to="/about" onClick={closeAllSub}>
                 <h1>About</h1>
             </Link>
     
@@ -43,7 +48,7 @@ function Nav () {
                     </div> : null}   
             </div>
             
-            <Link to="/contact">
+            <Link to="/contact" onClick={closeAllSub}>
                 <h1>Contact</h1>
             </Link>
             
