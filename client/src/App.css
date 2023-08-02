@@ -618,7 +618,11 @@ footer p {
   #logo-img {
     height: 4em;
     padding: 4px 40px;
+  }
 
+  #header-container-mobscroll {
+   position: fixed;
+   top: 0px;
   }
 
   /********************** NAV ***********************/
@@ -996,7 +1000,7 @@ footer p {
     flex-direction: row;
     width: 56em;
     height: 23em;
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .up-show-card-container .up-show-c-header {
