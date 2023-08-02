@@ -625,6 +625,12 @@ footer p {
    top: 0px;
   }
 
+  #header-container-mobscroll #nav-container #nav-show-sub,
+  #header-container-mobscroll #nav-container #nav-op-sub {
+    background-color: #59788e;
+  }
+
+
   /********************** NAV ***********************/
 
   #nav-container {
@@ -962,7 +968,7 @@ footer p {
   }
 
   #about-content {
-    width: 65vw;
+    width: 70vw;
   }
 
   #about-content p {
@@ -999,7 +1005,7 @@ footer p {
     display: flex;
     flex-direction: row;
     width: 56em;
-    height: 23em;
+    height: 20em;
     margin-bottom: 60px;
   }
 
@@ -1111,6 +1117,78 @@ footer p {
     margin-top: 100px;
   } */
 
+
+  /********************** book us ***********************/
+  #book-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #book-content {
+    width: 70vw;
+  }
+
+  #book-content p{
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+
+  /********************** sponsor ***********************/
+  #sponsor-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #sponsor-content {
+    width: 70vw;
+  }
+
+  #sponsor-content p{
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+  /********************** SUBMISSIONS ***********************/
+  
+  #sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #sub-content {
+    width: 70vw;
+  }
+
+  #sub-content p{
+    font-size: 0.9em;
+    line-height: 25px;
+  }
+  /********************** contact ***********************/
+  
+  #contact-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #contact-content article {
+    /* width: 600px; */
+    justify-content: space-between;
+  }
+  
+  /* #contact-content {
+    width: 70vw;
+  } */
+
+  #sub-content p{
+    font-size: 0.9em;
+    line-height: 25px;
+  }
 
   /********************** Footer ***********************/
 
