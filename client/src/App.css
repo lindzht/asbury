@@ -1056,7 +1056,7 @@ footer p {
     justify-content: space-between;
     width: 65em;
     box-shadow: none;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     border-bottom: 1px solid black;
   }
 
@@ -1117,7 +1117,68 @@ footer p {
     font-weight: 500;
   }
 
+  /********************** Past Shows ***********************/
 
+  #past-container {
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #past-container .banner {
+    margin-bottom: 50px;
+  }
+
+  #past-container .banner h1 {
+    color: #59788e6e;
+  }
+  
+  /********************** Past Shows CARD ***********************/
+
+
+  .past-show-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70em;
+    box-shadow: none;
+    padding-bottom: 50px;
+    border-bottom: 1px solid black;
+  }
+
+  .past-show-card-container img, 
+  .past-show-card-container #p-details {
+    width: 250px;
+  }
+
+  .past-show-card-container #p-details {
+    margin-top: 15px;
+  }
+
+  .past-show-card-container h1 {
+    font-size: 1.7em;
+    width: 160px;
+  }
+
+  .past-show-card-container #p-details h3{
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+  }
+
+  .past-show-card-container #p-details h4 {
+    font-size: 0.8em;
+  }
+
+  .past-show-card-container p{
+    width: 300px;
+    font-size: 0.9em;
+    line-height: 20px;
+  }
 
   /********************** book us ***********************/
   #book-container{
