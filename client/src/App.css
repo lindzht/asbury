@@ -405,9 +405,9 @@ footer p {
   margin-bottom: 130px;
 }
 
-#sub-container .t-block {
+/* #sub-container .t-block {
   margin: 30px 30px;
-} 
+}  */
 
 #sub-container button {
   margin: 50px 0 0 0;
@@ -601,6 +601,13 @@ footer p {
 
 @media only screen and (min-width: 768px) {
 
+
+  /********************** global ***********************/
+
+  .sub-header {
+    padding: 2em 5em;
+  }
+
   /********************** HEADER ***********************/
 
  
@@ -783,7 +790,6 @@ footer p {
     font-weight: 900;
     line-height: 0.8em;
     text-align: justify;
-    /* letter-spacing: 50px; */
   }
 
   #landing-about p {
@@ -810,10 +816,6 @@ footer p {
     background-position: center;
   }
 
-  /* #landing-about #land-img-row div:hover{
-    opacity: 50%;
-    background-image: none!important;
-  } */
 
   #testimonials-container {
     padding: 4em 0;
@@ -1054,7 +1056,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 65em;
+    width: 69em;
     box-shadow: none;
     padding-bottom: 50px;
     border-bottom: 1px solid black;
@@ -1133,6 +1135,12 @@ footer p {
   #past-container .banner h1 {
     color: #59788e6e;
   }
+
+  #past-years {
+    position: fixed;
+    left: 20px;
+    top: 570px;
+  }
   
   /********************** Past Shows CARD ***********************/
 
@@ -1142,28 +1150,31 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 70em;
+    width: 60em;
     box-shadow: none;
     padding-bottom: 50px;
     border-bottom: 1px solid black;
   }
 
   .past-show-card-container img, 
-  .past-show-card-container #p-details {
-    width: 250px;
+  .past-show-card-container h1, 
+  .past-show-card-container #p-details,
+  .past-show-card-container p {
+    width: 20%;
   }
 
   .past-show-card-container #p-details {
     margin-top: 15px;
+    width: 120px;
   }
 
   .past-show-card-container h1 {
-    font-size: 1.7em;
-    width: 160px;
+    font-size: 1.5em;
+    margin-right: -50px;
   }
 
   .past-show-card-container #p-details h3{
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 0;
     margin: 0;
     line-height: 20px;
@@ -1176,7 +1187,7 @@ footer p {
 
   .past-show-card-container p{
     width: 300px;
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 20px;
   }
 
@@ -1190,6 +1201,10 @@ footer p {
   
   #book-content {
     width: 70vw;
+  }
+
+  #book-content .sub-header {
+    margin-bottom: -50px;
   }
 
   #book-content p{
@@ -1209,6 +1224,10 @@ footer p {
     width: 70vw;
   }
 
+  #sponsor-content .sub-header {
+    margin-bottom: -50px;
+  }
+
   #sponsor-content p{
     font-size: 0.9em;
     line-height: 25px;
@@ -1220,6 +1239,10 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #sub-container .sub-header {
+    margin-bottom: -50px;
   }
   
   #sub-content {
