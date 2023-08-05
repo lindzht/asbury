@@ -70,7 +70,16 @@ function LandingPage ({isDesktop}) {
 
             <Testimonials />
 
-            <button type="button" className="btn">Join Our Mailing List</button>
+            
+            <div id="mailing-list-container">
+                <h2>Join our Mailing List</h2>
+                <h4>Sign up below and receive upcoming show announcements, opportunities, and more straight to your inbox.</h4>
+                <form>
+                    <label for="" ></label>
+                    <input type="text" id="email" name="email" placeholder="Email"/>
+                    <input type="submit" value="Submit" />
+                </form>  
+            </div> 
 
             
         </div>

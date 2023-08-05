@@ -914,9 +914,42 @@ footer p {
     margin: 0;
   } */
 
-  #landing-container .btn {
-    width: 250px;
-    margin: 5em 0;
+  #mailing-list-container{
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #mailing-list-container form {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+
+    z-index: 10;
+  }
+  #mailing-list-container form input[type="text"]{
+    height: 2em;
+    width: 20em;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    border: 1px solid #59788e;
+  }
+
+  #mailing-list-container form input[type="submit"]{
+    background-color: #59788e;
+    color: white;
+    border: none;
+    /* padding: 1em; */
+    width: 10em;
+    height: 2em;
+    margin: 20px 0;
+  }
+
+  #mailing-list-container form input[type="submit"]:hover {
+    background-color: #425d71;
+    cursor: grab;
   }
 
   /********************** STATIC BANNER IMAGE ***********************/
