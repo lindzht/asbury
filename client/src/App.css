@@ -1038,7 +1038,7 @@ footer p {
 
   /********************** Upcoming Shows CARD ***********************/
 
-  .up-show-card-container {
+  /* .up-show-card-container {
     display: flex;
     flex-direction: row;
     width: 56em;
@@ -1071,10 +1071,6 @@ footer p {
     opacity: 68%;
   }
 
-  /* .up-show-card-container .up-show-c-desc {
-    margin-top: 0px;
-  } */
-
   .up-show-card-container .up-show-c-desc h3{
     letter-spacing: 0px;
     font-weight: 100;
@@ -1096,13 +1092,12 @@ footer p {
     color: blue;
     font-family: Calibri, sans-serif;
     font-weight: 100;
-    /* font-size: 1.6em; */
   }
 
   .up-show-card-container .up-show-c-desc #tix:hover{
     left: 355px;
     font-weight: 500;
-  }
+  } */
 
 
 
