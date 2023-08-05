@@ -477,6 +477,7 @@ footer p {
   align-items: center;
   width: 330px;
   height: 350px;
+  flex-direction: column;
 }
 
 .up-show-c-header img{
@@ -1033,51 +1034,68 @@ footer p {
   /********************** Upcoming Shows ***********************/
 
   #upcoming-container {
-    margin: 50px 0;
+    margin-bottom: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #upcoming-container .banner {
+    margin-bottom: 50px;
+  }
+
+  #upcoming-container .banner h1 {
+    color: #59788e6e;
   }
 
   /********************** Upcoming Shows CARD ***********************/
 
-  /* .up-show-card-container {
+  .up-show-card-container{
     display: flex;
     flex-direction: row;
-    width: 56em;
-    height: 20em;
-    margin-bottom: 60px;
+    justify-content: space-between;
+    width: 65em;
+    box-shadow: none;
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
   }
 
   .up-show-card-container .up-show-c-header {
-    margin-left: 319px;
-    height: 23em;
+     width: 50%;
+     margin-right: 20px;
+     background-position: center;
+     background-image: contain!important;
   }
 
-  .up-show-card-container .up-show-c-header #up-s-c-title h1 {
-    margin: -10px 0 10px 10px;
+  .up-show-card-container .up-show-c-header h2{
+    background-color: white;
+    padding: 10px 2em;
+    margin: -10px 0 0 -350px;
   }
 
-  .up-show-card-container .up-show-c-header #up-s-c-title h2{
-    font-size: 1.5em;
-    margin-bottom: 185px;
+  .up-show-card-container .up-show-c-header h1 {
+    font-size: 2.1em;
+    margin: 150px 0 0 -50px;
   }
 
 
-  .up-show-card-container .up-show-c-header #up-img{
-    width: 30em;
-    height: 23em;
-    margin-left: -475px;
-    z-index: -1;
-    background-position: center;
-    background-size: contain;
-    opacity: 68%;
+  .up-show-card-container .up-show-c-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    width: 50%;
   }
 
   .up-show-card-container .up-show-c-desc h3{
     letter-spacing: 0px;
     font-weight: 100;
     font-size: 1.2em;
-  }
+  } 
+
   .up-show-card-container .up-show-c-desc h4 {
-    font-size: 1em;
+    font-size: 0.9em;
+    line-height: 20px;
   }
 
   .up-show-card-container .up-show-c-desc p {
@@ -1087,67 +1105,18 @@ footer p {
 
   .up-show-card-container .up-show-c-desc #tix {
     position: relative;
-    left: 350px;
-    top: 25px;
+    left: 385px;
+    top: 40px;
     color: blue;
     font-family: Calibri, sans-serif;
     font-weight: 100;
   }
 
   .up-show-card-container .up-show-c-desc #tix:hover{
-    left: 355px;
+    left: 390px;
     font-weight: 500;
-  } */
-
-
-
-
-  /* .up-show-card-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 60em;
   }
 
-  .up-show-c-header {
-    width: 27em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: -180px;
-  }
-
-  .up-show-c-header #up-img {
-    height: 350px;
-    width: 100%;
-    background-position: center;
-    background-size: contain;
-    z-index: -1;
-    margin-left: -535px;
-  }
-
-  .up-show-c-header #up-s-c-title{
-    margin-left: 0px;
-  }
-
-  .up-show-card-container .up-show-c-desc {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-    height: 350px;
-    width: 40%;
-  }
-
-  .up-show-card-container .up-show-c-desc a{
-    position: relative;
-    left: 400px;
-    top: 10px;
-  }
-
-  .up-show-card-container .up-show-c-desc p {
-    margin-top: 100px;
-  } */
 
 
   /********************** book us ***********************/
