@@ -947,16 +947,19 @@ footer p {
     background-color: #59788e;
     color: white;
     border: none;
-    /* padding: 1em; */
-    width: 10em;
-    height: 2em;
-    margin: 20px 0;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 70%;
+    cursor: grab;
+    margin-top: 20px;
   }
 
   #mailing-list-container form input[type="submit"]:hover {
-    background-color: #425d71;
-    cursor: grab;
+    background-color: #2b4254;
   }
+
+
 
   /********************** STATIC BANNER IMAGE ***********************/
 
@@ -1138,9 +1141,28 @@ footer p {
 
   #past-years {
     position: fixed;
+    display: flex;
+    flex-direction: column;
     left: 20px;
     top: 570px;
+    font-family: Calibri, sans-serif;
+    font-weight: 100;
+    letter-spacing: 2px;
+    font-size: 1.2em;
   }
+
+  #past-years a {
+    padding: 5px 0;
+    color: #59788ec2;
+  }
+
+  #past-years a:hover,
+  #past-years a:active {
+    color:#59788e;
+    font-weight: 500;
+  }
+
+
   
   /********************** Past Shows CARD ***********************/
 
@@ -1152,7 +1174,8 @@ footer p {
     align-items: center;
     width: 60em;
     box-shadow: none;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+    margin-top: 20px;
     border-bottom: 1px solid black;
   }
 
@@ -1253,6 +1276,24 @@ footer p {
     font-size: 0.9em;
     line-height: 25px;
   }
+
+  .btn {
+    background-color: #59788e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 0.9em;
+    width: 20%;
+    cursor: grab;
+  }
+  
+  .btn:hover {
+    background-color: #2b4254;
+  }
+
+
+
   /********************** contact ***********************/
   
   #contact-container{
@@ -1264,16 +1305,47 @@ footer p {
   #contact-content article {
     /* width: 600px; */
     justify-content: space-between;
+    margin-right: 10%;
   }
   
-  /* #contact-content {
+  #contact-content {
     width: 70vw;
-  } */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 6%;
+  }
 
   #sub-content p{
     font-size: 0.9em;
     line-height: 25px;
   }
+
+  #contact-content .t-block {
+    width: 500px;
+    margin: 40px 0px;
+
+  }
+  #contact-content .t-block .t-right{
+    width: 50%;
+  }
+
+  #contact-content #follow-container{
+    display: flex;
+    width: 60vw;
+    justify-content: space-around;
+    margin-top: 30px;  
+  }
+
+  #contact-content #follow-container h3{
+    font-weight: 100;
+    background-color: white;
+  }
+
+
+
+
 
   /********************** Footer ***********************/
 

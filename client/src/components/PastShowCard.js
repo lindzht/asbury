@@ -1,7 +1,7 @@
 import { useMediaQuery } from 'react-responsive'
 
 
-function PastShowCard ( {img, title, date, location, host, time, cost, desc, url} ) {
+function PastShowCard ( {year, img, title, date, location, host, time, cost, desc, url} ) {
     const isDesktop = useMediaQuery({query: '(min-width: 992px)'})
 
 
@@ -25,7 +25,7 @@ if (!isDesktop){
 
 else {
     return(
-        <div className="past-show-card-container">
+        <div className="past-show-card-container" id={year}>
             <img src={img} alt={title} />
             <h1>{title}</h1>
             <div id="p-details">

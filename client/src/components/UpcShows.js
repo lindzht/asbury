@@ -32,7 +32,8 @@ function UpcomingShows({isDesktop}) {
                 location="365 Fifth Ave (B/W 34th & 35th Street)"
                 cost="$25"
                 host="Ken Dashow"
-                desc={testDesc}/>
+                desc={testDesc}
+                url="https://bpt.me/5763465"/>
            
             <Fade bottom>
                 <UpcomingShowCard 
@@ -44,7 +45,8 @@ function UpcomingShows({isDesktop}) {
                     location="365 Fifth Ave (B/W 34th & 35th Street)"
                     cost="$25"
                     host="Ken Dashow"
-                    desc={testDesc}/>
+                    desc={testDesc}
+                    url="https://bpt.me/5763465"/>
             </Fade>
             <Fade bottom>
                 <UpcomingShowCard 
