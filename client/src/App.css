@@ -968,7 +968,7 @@ footer p {
   }
 
   .b-img {
-    opacity: 50%;
+    opacity: 70%;
     background-position: center;
     background-size: cover;
   }
@@ -1049,9 +1049,6 @@ footer p {
     margin-bottom: 50px;
   }
 
-  #upcoming-container .banner h1 {
-    color: #59788e6e;
-  }
 
   /********************** Upcoming Shows CARD ***********************/
 
@@ -1068,19 +1065,25 @@ footer p {
   .up-show-card-container .up-show-c-header {
      width: 44%;
      margin-right: 20px;
-     background-position: center;
-     background-image: contain!important;
+     background-position: 50% 65%;
+     background-image: cover !important;
   }
 
   .up-show-card-container .up-show-c-header h2{
     background-color: white;
-    padding: 10px 2em;
-    margin: -10px 0 0 -350px;
+    padding: 10px 0.8em 10px 0.8em;
+    position: relative;
+    top: -125px;
+    left: -170px;
+
   }
 
   .up-show-card-container .up-show-c-header h1 {
     font-size: 2.1em;
-    margin: 150px 0 0 -20px;
+    position: absolute;
+    margin: 230px 0 0 -40px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px 10px;
   }
 
 
@@ -1111,7 +1114,7 @@ footer p {
   .up-show-card-container .up-show-c-desc #tix {
     position: relative;
     left: 385px;
-    top: 40px;
+    top: 38px;
     color: blue;
     font-family: Calibri, sans-serif;
     font-weight: 100;
@@ -1135,9 +1138,6 @@ footer p {
     margin-bottom: 50px;
   }
 
-  #past-container .banner h1 {
-    color: #59788e6e;
-  }
 
   #past-years {
     position: fixed;
@@ -1221,6 +1221,11 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+
+  #book-container .banner .b-img {
+    background-position: 0 -80px;
+    opacity: 70%;
+  }
   
   #book-content {
     width: 70vw;
@@ -1241,6 +1246,11 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  #sponsor-container .banner .b-img {
+    background-position: 0 -280px;
+    opacity: 80%;
   }
   
   #sponsor-content {
@@ -1265,7 +1275,8 @@ footer p {
   }
 
   #sub-container .banner .b-img {
-    background-position: top;
+    background-position: -100px 0;
+    opacity: 70%;
   }
 
 

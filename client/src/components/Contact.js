@@ -1,11 +1,12 @@
 import Banner from "./Banner";
 import TextBlock from "./TextBlock";
+import bettina from "../images/bettina.jpeg";
 
 function Contact () {
 
     return(
         <div id="contact-container">
-            <Banner title="Contact" img="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" />
+            <Banner title="Contact" img={bettina} />
             <div id="contact-content">
                 <TextBlock title="Email" content="dougleclaire54@yahoo.com" />
                 <TextBlock title="Phone" content="+1.718.510.6929" />

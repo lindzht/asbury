@@ -1,7 +1,7 @@
 import UpcomingShowCard from "./UpcShowCard";
 import Fade from 'react-reveal/Fade';
 import Banner from "./Banner";
-import poster from "../images/theater_light.jpg";
+import poster from "../images/filmstill.jpg";
 
 
 function UpcomingShows({isDesktop}) {
@@ -25,7 +25,7 @@ function UpcomingShows({isDesktop}) {
           
             <UpcomingShowCard 
                 isDesktop={isDesktop}
-                img="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949"
+                img={poster}
                 title="CUNY Graduate Theater"
                 date="Aug 18"
                 time="7:00PM"

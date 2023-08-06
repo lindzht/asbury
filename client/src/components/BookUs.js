@@ -1,11 +1,14 @@
 import Banner from "./Banner";
 import TextBlock from "./TextBlock";
 import Fade from 'react-reveal/Fade';
+import crowd from "../images/puntacrowd.jpg";
+
+
 
 function BookUs () {
     return(
         <div id="book-container">
-            <Banner title="Book Us" img="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Placeholder_view_vector.svg/1362px-Placeholder_view_vector.svg.png?20220519031949" />
+            <Banner title="Book Us" img={crowd} />
             <div id="book-content">
                 <h2 className="sub-header">Bring Asbury Shorts to your city! </h2>
 

@@ -1,8 +1,8 @@
 import PastShowCard from "./PastShowCard";
 import Banner from "./Banner";
-import poster from "../images/theater_light.jpg";
+import poster from "../images/filmstill.jpg";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { HashLink } from 'react-router-hash-link';
 
 
