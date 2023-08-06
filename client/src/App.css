@@ -975,8 +975,8 @@ footer p {
 
   .banner h1 {
     position: absolute;
-    top: 150px;
-    font-size: 6em;
+    top: 170px;
+    font-size: 5em;
     letter-spacing: 10px;
     color: white;
   }
@@ -1059,14 +1059,14 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 69em;
+    width: 67em;
     box-shadow: none;
     padding-bottom: 50px;
     border-bottom: 1px solid black;
   }
 
   .up-show-card-container .up-show-c-header {
-     width: 50%;
+     width: 44%;
      margin-right: 20px;
      background-position: center;
      background-image: contain!important;
@@ -1080,7 +1080,7 @@ footer p {
 
   .up-show-card-container .up-show-c-header h1 {
     font-size: 2.1em;
-    margin: 150px 0 0 -50px;
+    margin: 150px 0 0 -20px;
   }
 
 
@@ -1263,6 +1263,11 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+
+  #sub-container .banner .b-img {
+    background-position: top;
+  }
+
 
   #sub-container .sub-header {
     margin-bottom: -50px;
