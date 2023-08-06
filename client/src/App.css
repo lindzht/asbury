@@ -786,7 +786,7 @@ footer p {
     width: 100%;
     color: #59788e16;
     z-index: 0;
-    top: -290px;
+    top: -220px;
     position: fixed;
     z-index: 10;
     font-weight: 900;
@@ -1496,6 +1496,38 @@ footer p {
     justify-content: center;
     align-items: center;
   }
+
+  #login-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70vw;
+  }
+
+  #login-content button {
+    width: 200px;
+  }
+
+  #login-content #login-l {
+    height: 500px;
+    overflow-y: scroll;
+    margin-right: 5em;
+  }
+
+  #login-content #login-l span {
+    padding: 0 20px 0 30px;
+  }
+
+  #login-content #login-l span:hover {
+    color: blue;
+    cursor: grab;
+  }
+
+  #login-content #login-l ul li{
+    padding: 8px 0;
+  }
+
 
   #login-container input[type="submit"] {
     margin-top: 30px;
