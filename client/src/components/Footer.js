@@ -22,7 +22,7 @@ function Footer ({isDesktop}) {
                 <img src={twitter} alt="email" />
                 <img src={facebook} alt="email" />
                 <img src={instagram} alt="email" />
-                <p>Web Design By Lindsay Taylor</p>
+                {/* <p>Web Design By Lindsay Taylor</p> */}
                 
             </div>
         </footer>

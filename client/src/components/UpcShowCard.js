@@ -3,13 +3,11 @@
 function UpcomingShowCard ( {isDesktop, img, title, date, location, host, time, cost, desc, url} ) {
     return(
         <div className="up-show-card-container">
-            <div className="up-show-c-header">
-                {/* <img src={img} alt={title} /> */}
-                <div id="up-s-c-title">
+            <div className="up-show-c-header" style={{backgroundImage:`url(${img})`}}>
                     <h2>{date}</h2>
                     <h1>{title}</h1>
-                </div>
-                <div id="up-img" style={{backgroundImage:`url(${img})`}}></div>
+                {/* <div id="up-s-c-title" style={{backgroundImage:`url(${img})`}}>
+                </div> */}
             </div>
             <div className="up-show-c-desc">
                 {!isDesktop ? null : <a href={`${url}`} id="tix" alt="Tickets" target="_blank" rel="noreferrer">Tickets<span>→</span></a>}
