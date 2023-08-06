@@ -1351,17 +1351,22 @@ footer p {
     display: flex;
     width: 60vw;
     justify-content: space-around;
-    margin-top: 30px;  
+    margin-top: 50px;  
     cursor: grab;
+  }
+
+  #contact-content h2{
+    margin-top: 40px;
   }
 
   #contact-content #follow-container h3{
     font-weight: 100;
     background-color: white;
-    width: 130px;
+    width: 110px;
     padding: 4px 0;
     z-index: 10;
     position: relative;
+    font-size: 1.1em;
   }
 
 
@@ -1423,9 +1428,48 @@ footer p {
   }
 
 
-
+  /********************** Login Page ***********************/
   
+  #login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  #login-container input[type="submit"] {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  #login-container #new-show-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-bottom: 100px;
+  }
+
+  #login-container #new-show-container form input {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 400px;
+  }
+
+  #login-container #new-show-container form input::placeholder {
+    color:rgba(128, 128, 128, 0.639);
+    font-style: italic;
+  }
+
+  #login-container #new-show-container form textarea{
+    height: 100px;
+    width: 400px;
+  }
+
+  #login-container #new-show-container button {
+    width: 400px;
+  }
 
   
 
