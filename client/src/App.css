@@ -745,10 +745,12 @@ footer p {
     width: 26%;
     padding: 5px 0 5px 10px;
     margin-left: -10px;
+    letter-spacing: 0;
+
   }
 
   #landcard-title h3 {
-    font-style: italic;
+    /* font-style: italic; */
     font-size: 1em;
   }
 
@@ -817,6 +819,9 @@ footer p {
   }
 
 
+
+  /********************** Testimonials ***********************/
+
   #testimonials-container {
     padding: 4em 0;
     /* background-color: #ffffff;   */
@@ -830,15 +835,15 @@ footer p {
   }
 
   .tmonial-block {
-    width: 19em;
+    width: 17em;
     background-color: rgb(255, 255, 255);
     margin: 20px 4em;
-    padding: 2em 4em 4em 4em;
+    padding: 2em 4em 2em 4em;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     box-shadow: 10px 5px 5px #425d7130;
-    border-radius: 40% 40% 0 0;
+
   }
 
   .tmonial-header{
@@ -848,43 +853,50 @@ footer p {
   #tmonial-img {
     background-size: cover;
     background-position: center;
-    width: 22em;
-    height: 22em;
-    border-radius: 50%;
-    margin: -25px 0 -40px 0;
-    border: 1em solid #425d71;
+    width: 23em;
+    height: 27em;
+    padding: 0;
+    margin: -10px 0 0 0;
+    opacity: 70%;
+    z-index: -1;
   }
 
 
   .tmonial-quote {
     margin: 0px;
     width: 100%;
+    z-index: 10;
   }
 
   .tmonial-quote h1{
-    margin: -220px 0 -15px 0;
-    font-size: 1.8em;
-    opacity: 0;
-    padding: 7em 1em;
-    border-radius: 50%;
+    font-size: 6em;
+    letter-spacing: 3px;
+    font-weight: 600;
+    margin: -120px 0 30px -43px;
+    text-align: left;
+    color:  #dfe4e7;
+    /* color: white; */
+    line-height: 55px;
+    /* opacity: 0; */
+    /* padding: 7em 1em; */
+    /* border-radius: 50%; */
     /* background-color: yellow; */
   }
 
   .tmonial-block:hover h1{
-    opacity: 100%;
+    color: yellow;
     cursor: grab;
-    z-index: 100;
   }
 
   .tmonial-quote h3{
-    font-size: 2.5em;
-    letter-spacing: -0.5px;
-    margin: 20px 0 0 -21px;
+    font-size: 2.4em;
+    letter-spacing: 0px;
+    margin: 0 0 0 -32px;
     width: 10em;
   }
 
   .tmonial-block:hover #tmonial-img{
-    opacity: 19%;
+    opacity: 100%;
     cursor: grab;
   }
 
