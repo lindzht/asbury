@@ -1,6 +1,6 @@
 import Banner from "./Banner";
 import TextBlock from "./TextBlock";
-import Doug from "../images/dougbiopic.jpg";
+import Doug from "../images/doug_drawing.png";
 import poster from "../images/DTAJposter.jpg";
 
 

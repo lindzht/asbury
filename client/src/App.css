@@ -138,7 +138,7 @@ footer p {
   margin: 20px;
   font-family: Calibri, sans-serif;
   font-weight: 100;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   font-size: 1.2em;
 }
 
@@ -824,18 +824,54 @@ footer p {
 
   #testimonials-container {
     padding: 4em 0;
-    /* background-color: #ffffff;   */
-    /* background-image: url('images/theater_light.jpg'); */
     background-position: bottom;
     flex-direction: row;
     background-color: #f2f4f5;
     width: 100vw;
     overflow-x: scroll;
     justify-content: left;
+
   }
 
   .tmonial-block {
-    width: 17em;
+    width: 24em;
+    background-color: rgb(255, 255, 255);
+    margin: 20px 4em;
+    padding: 3em 4.4em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: 10px 5px 5px #425d7130;
+    border-radius: 10px;
+    cursor: grab;
+  }
+
+  .tmonial-block:hover{
+    box-shadow: 10px 5px 5px #425d7155;
+    margin: 0 5em 1em 4em;
+  }
+
+  .tmonial-quote {
+    margin: 0px;
+    width: 115%;
+    padding: 0;
+  }
+
+  .tmonial-quote h3{
+    font-size: 3.2em;
+    color: #59788e;
+  } 
+
+  .tmonial-quote h4 {
+    font-style: italic;
+  }
+
+  #testimonials-container > div:nth-child(5) > div > article:hover{
+    margin-bottom: 4em;
+  }
+
+  /* .tmonial-block {
+    width: 24em;
     background-color: rgb(255, 255, 255);
     margin: 20px 4em;
     padding: 2em 4em 2em 4em;
@@ -854,7 +890,7 @@ footer p {
     background-size: cover;
     background-position: center;
     width: 23em;
-    height: 27em;
+    height: 25em;
     padding: 0;
     margin: -10px 0 0 0;
     opacity: 70%;
@@ -869,18 +905,13 @@ footer p {
   }
 
   .tmonial-quote h1{
-    font-size: 6em;
+    font-size: 5.2em;
     letter-spacing: 3px;
-    font-weight: 600;
-    margin: -120px 0 30px -43px;
+    font-weight: 100;
+    margin: -110px 0 30px -30px;
     text-align: left;
-    color:  #dfe4e7;
-    /* color: white; */
+    color: white;
     line-height: 55px;
-    /* opacity: 0; */
-    /* padding: 7em 1em; */
-    /* border-radius: 50%; */
-    /* background-color: yellow; */
   }
 
   .tmonial-block:hover h1{
@@ -891,43 +922,19 @@ footer p {
   .tmonial-quote h3{
     font-size: 2.4em;
     letter-spacing: 0px;
-    margin: 0 0 0 -32px;
-    width: 10em;
+    width: 130%;
+    margin-left: -30px;
   }
 
   .tmonial-block:hover #tmonial-img{
     opacity: 100%;
     cursor: grab;
-  }
+  } */
 
   #testimonials-container > div:nth-child(2) > article{
     animation: fadeIn 3s; 
   }
 
-
-
-  /* .tmonial-block .tmonial-header img{
-    width: 15em;
-    height: 15em;
-    box-shadow: 10px 5px 5px #425d7130;
-  }
-
-  .tmonial-quote {
-    width: 90%;
-    margin-left: 50px;
-  }
-  
-  .tmonial-quote h3{
-    font-size: 2em;
-    line-height: 50px;
-    font-style: italic;
-    margin: 20px 0;
-  }
-
-  .tmonial-quote h4 {
-    font-size: 1.2em;
-    margin: 0;
-  } */
 
   #mailing-list-container{
     width: 40vw;
@@ -944,9 +951,10 @@ footer p {
     flex-direction: column;
     /* justify-content: center; */
     align-items: center;
-
     z-index: 10;
   }
+
+
   #mailing-list-container form input[type="text"]{
     height: 2em;
     width: 20em;
@@ -1036,12 +1044,13 @@ footer p {
     flex-direction: column;
   }
 
-  #about-container .t-block .t-right #t-img {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
+  #about-container .t-block .t-left #t-img {
+    width: 7em;
+    height: 9em;
+    border-radius: 0%;
     background-position: center;
     background-size: cover;
+    margin-bottom: -10px;
   }
 
   #team-container > article > div.t-right > p > ul {
