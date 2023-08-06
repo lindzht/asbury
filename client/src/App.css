@@ -1336,11 +1336,16 @@ footer p {
     width: 60vw;
     justify-content: space-around;
     margin-top: 30px;  
+    cursor: grab;
   }
 
   #contact-content #follow-container h3{
     font-weight: 100;
     background-color: white;
+    width: 130px;
+    padding: 4px 0;
+    z-index: 10;
+    position: relative;
   }
 
 
