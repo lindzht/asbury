@@ -32,9 +32,9 @@ function Nav () {
             </Link>
     
             <div id="shows">
-                <h1 onClick={handleDisplayShow}>Shows</h1>
+                <h1 onClick={handleDisplayShow} onMouseEnter={handleDisplayShow}>Shows</h1>
                     {displayShowSub ? 
-                    <div id="nav-show-sub">
+                    <div id="nav-show-sub" onMouseLeave={closeAllSub}>
                         <Link to="upcoming" onClick={handleDisplayShow} >Upcoming Shows</Link>
                         <Link to="past" onClick={handleDisplayShow} >Past Shows</Link>  
                     </div> : null}
@@ -42,9 +42,9 @@ function Nav () {
             
             
             <div id="ops">
-                <h1 onClick={handleDisplayOpp}>Opportunities</h1>
+                <h1 onClick={handleDisplayOpp} onMouseEnter={handleDisplayOpp} >Opportunities  </h1>
                     {displayOppSub ? 
-                    <div id="nav-op-sub">
+                    <div id="nav-op-sub" onMouseLeave={closeAllSub}>
                         <Link to="booking" onClick={handleDisplayOpp} >Book Us</Link>
                         <Link to="sponsorship" onClick={handleDisplayOpp} >Sponsorship</Link>
                         <Link to="submissions" onClick={handleDisplayOpp} >Submissions</Link>
@@ -54,7 +54,7 @@ function Nav () {
             <Link to="/contact" onClick={closeAllSub}>
                 <h1>Contact</h1>
             </Link>
-            <Link to="submissions" onClick={handleDisplayOpp} >
+            <Link to="submissions" onClick={closeAllSub} >
                 <h1 id="sub-to-u">Submit Your Film</h1>   
             </Link>
             
