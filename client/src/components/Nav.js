@@ -26,6 +26,7 @@ function Nav () {
 
     return(
         <div id="nav-container">
+
             <Link to="/about" onClick={closeAllSub}>
                 <h1>About</h1>
             </Link>
@@ -52,6 +53,9 @@ function Nav () {
             
             <Link to="/contact" onClick={closeAllSub}>
                 <h1>Contact</h1>
+            </Link>
+            <Link to="submissions" onClick={handleDisplayOpp} >
+                <h1 id="sub-to-u">Submit Your Film</h1>   
             </Link>
             
         </div>

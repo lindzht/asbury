@@ -3,6 +3,7 @@
 .App {
   /* padding: 10px 10px 0 10px; */
   /* width: 100vw!important; */
+  overflow-x: hidden;
 }
 
 body {
@@ -640,14 +641,26 @@ footer p {
 
 
   /********************** NAV ***********************/
+  #sub-to-u {
+    background-color: #59788e;
+    color: white;
+    padding: 4px;
+  }
+
+  #sub-to-u:hover{
+    background-color: white;
+    color: #59788e;
+  }
+
 
   #nav-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 600px;
+    width: 800px;
     height: 100px;
+
   }
 
   #nav-container a {
@@ -661,7 +674,8 @@ footer p {
   }
 
   #nav-container h1 {
-    font-size: 0.9em;
+    font-size: 1em;
+    font-weight: 400;
   }
 
   #nav-container h1:hover {
@@ -709,13 +723,30 @@ footer p {
   .landcard-content {
     background-size:cover;
     background-position: left;
-    height: 35em;
+    height: 38em;
     width: 33em;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     /* background-repeat: repeat; */
   }
+  
+  #landcard-title h1, 
+  #landcard-title h3 {
+    opacity: 0;
+  }
+
+  .landcard-container:hover #landcard-title h1,
+  .landcard-container:hover #landcard-title h3 {
+    opacity: 100;
+  }
+  
+  .landcard-container .landcard-content:hover{
+    background-image: none!important;
+    background-color: #59788e;
+    cursor: grab;
+  }
+
 
   #landcard-title {
     text-align: left;
@@ -724,7 +755,7 @@ footer p {
   }
 
   #landcard-title:hover {
-    color: yellow;
+    color: rgb(255, 255, 255);
   }
 
   #landcard-title h1{
@@ -743,9 +774,10 @@ footer p {
     background-color: white;
     color: black;
     width: 26%;
-    padding: 5px 0 5px 10px;
+    padding: 10px 0 10px 10px;
     margin-left: -10px;
     letter-spacing: 0;
+    font-size: 2em;
 
   }
 
@@ -776,15 +808,14 @@ footer p {
     justify-content: center;
     align-items: center;
     margin-top: 10px;
-    padding: 3em 3em 2em 3em;
-    width: 90vw;
-    background-color: white;
+    /* padding: 3em 3em 2em 3em; */
   }
 
   #landing-about h2 {
     font-size: 25em;
     width: 100%;
-    color: #59788e16;
+    /* color: #59788e16; */
+    animation: color-change 5s infinite;
     z-index: 0;
     top: -220px;
     position: fixed;
@@ -794,11 +825,36 @@ footer p {
     text-align: justify;
   }
 
+
+@keyframes color-change {
+  0% { color: #59788e16; }
+  50% { color: #59788e84; }
+  100% { color: #59788e16; }
+}
+
+  #l-a-t {
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    z-index: 100;
+    padding: 4em 0;
+    margin-top: 9em;
+
+  }
+
   #landing-about p {
-    margin: 2em 15em 0 15em; 
-    font-size: 0.9em;
+    /* margin: 2em 15em 0 15em;  */
+    font-size: 1em;
     line-height: 22px;
     z-index: 10;
+    padding: 0 20em;
+    /* padding: 10em 8em 0 8em; */
+    /* border-radius: 20px; */
+    /* height: 30vh; */
   }
 
   #landing-about #land-img-row{
@@ -807,7 +863,7 @@ footer p {
     justify-content: space-around;
     align-items: center;
     width: 80vw;
-    margin-top: 5em;
+    margin: 5em 0;
     z-index: 10;
   }
 
@@ -816,6 +872,7 @@ footer p {
     height: 12.5em;
     background-size: cover;
     background-position: center;
+    margin: 0 5px;
   }
 
 
@@ -846,9 +903,15 @@ footer p {
     cursor: grab;
   }
 
+  .tmonial-block {
+    background-size: cover;
+    background-image: none!important;
+  }
+  
   .tmonial-block:hover{
     box-shadow: 10px 5px 5px #425d7155;
     margin: 0 5em 1em 4em;
+
   }
 
   .tmonial-quote {
@@ -937,13 +1000,17 @@ footer p {
 
 
   #mailing-list-container{
-    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: white; */
     z-index: 10;
-    padding: 1em 5em;
+    background-color: white;
+    padding: 5em 0;
+    margin: 5em 0;
+    width: 100vw;
+    border-radius: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
   }
 
   #mailing-list-container form {
@@ -957,10 +1024,10 @@ footer p {
 
   #mailing-list-container form input[type="text"]{
     height: 2em;
-    width: 20em;
+    width: 27em;
     background-color: rgb(255, 255, 255);
     text-align: center;
-    border: 1px solid #59788e;
+    border: 3px solid #59788e;
   }
 
   #mailing-list-container form input[type="submit"]{
